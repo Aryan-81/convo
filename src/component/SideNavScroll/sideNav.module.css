@@ -1,0 +1,26 @@
+.scrollNav {
+    position: fixed;
+    display: flex;
+    transform: rotate(-90deg);
+    font-family: "Montserrat", sans-serif;
+    top: 55vh;
+    left: -5%;
+    background-color: transparent;
+    z-index: 999;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    width: 18rem;
+    --sideScroll: 0px;
+}
+
+.navBut {
+    text-decoration: none;
+    border-bottom: 2px solid transparent !important;
+    padding: 7px 14px 6px;
+}
+
+
+
+.navBut {
+    cursor: pointer;
+}

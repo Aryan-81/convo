@@ -1,0 +1,39 @@
+/* styles/director.module.css */
+.directorPage {
+  padding: 3rem;
+  background-attachment: fixed;
+  color: white;
+}
+
+.secHeader {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.dirCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dirProfile {
+  width: 100%;
+  text-align: center;
+}
+
+.dirImg {
+  width: 50%;
+  border-radius: 12px;
+}
+
+.dirPara {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.dirQuotes {
+  width: 15%;
+  margin: 2rem 0;
+}
