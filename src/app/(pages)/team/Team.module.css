@@ -1,0 +1,119 @@
+/* Container for the team section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Title styling */
+.teamHead {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+/* Flexbox Grid to arrange the members side by side */
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+/* Profile card styling */
+.profileCard {
+  background-color: #222;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+  position: relative;
+}
+
+.profileCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image wrapper to make the image circular */
+.imgWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for the name and role */
+.profileName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.container p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Social links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.socialLinks a:hover {
+  color: #f39c12;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .profileCard {
+    width: 160px;
+  }
+
+  .imgWrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .teamHead {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    flex-direction: column;
+  }
+
+  .teamHead {
+    font-size: 2rem;
+  }
+
+  .profileCard {
+    width: 100%;
+    max-width: 300px;
+  }
+}
