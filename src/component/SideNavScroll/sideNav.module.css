@@ -2,14 +2,12 @@
     position: fixed;
     display: flex;
     transform: rotate(-90deg);
-    font-family: "Montserrat", sans-serif;
     top: 55vh;
-    left: -5%;
+    left: -7%;
     background-color: transparent;
     z-index: 999;
     font-size: 0.8rem;
-    justify-content: space-between;
-    width: 18rem;
+    justify-content: space-between ;
     --sideScroll: 0px;
 }
 
@@ -19,8 +17,24 @@
     padding: 7px 14px 6px;
 }
 
-
-
 .navBut {
     cursor: pointer;
 }
+
+.indici{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+.indici::after {
+    display: block;
+    content: "";
+    margin-top: 0.4rem;
+    margin-left: 0.3rem;
+    border-bottom: solid 3px white;
+    transform: scaleX(1);  
+    width: 40px;
+    transform: translateX(var(--sideScroll));
+    transition: transform 240ms ease-out;
+  }
