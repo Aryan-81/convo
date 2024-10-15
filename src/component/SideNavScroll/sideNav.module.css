@@ -1,16 +1,20 @@
 .scrollNav {
     position: fixed;
     display: flex;
-    transform: rotate(-90deg);
+    transform: translateX(-50%) rotate(-90deg) ;
     top: 55vh;
-    left: -7%;
+    left: 6%;
     background-color: transparent;
     z-index: 999;
     font-size: 0.8rem;
     justify-content: space-between ;
     --sideScroll: 0px;
 }
-
+@media screen and (max-width: 900px) {
+    .scrollNav{
+        display: none;
+    }
+  }
 .navBut {
     text-decoration: none;
     border-bottom: 2px solid transparent !important;

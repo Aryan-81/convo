@@ -1,4 +1,15 @@
 .page {
-    height: 500vh;
+    position: relative;
+    min-height: 300vh;
     width: 100vw;
 }
+.sec{
+    width: 85%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 900px) {
+    .sec{
+        width: 95%;
+    }
+  }

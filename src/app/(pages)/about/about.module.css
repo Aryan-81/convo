@@ -1,0 +1,38 @@
+.About{
+    min-height: 100vh;
+    position: relative;
+}
+.ctr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 10%; */
+}
+.ctr hr{
+    height: 70%;
+}
+.textCtr{
+    width: 50%;
+}
+.textCtr h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4vh;
+}
+
+
+@media screen and (max-width: 900px) {
+    .ctr{
+        flex-direction: column;
+        width: 85%;
+
+    }
+    .textCtr{
+        width: 100%;
+    }
+}

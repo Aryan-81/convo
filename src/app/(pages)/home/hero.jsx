@@ -3,7 +3,7 @@ import styles from './hero.module.css'
 export default function Hero(){
     return(
         <>
-             <div className={styles['lines']}>
+             {/* <div className={styles['lines']}>
                 {['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7', 'l8', 'l9', 'l10', 'l11'].map((id, index) => (
                     <div className={styles['line']} key={index} id={id}>
                         <img src={`/assets/${id === 'l3' || id === 'l4' || id === 'l7' || id === 'l10' ? 'Red' : 'Blue'}Line.png`} />
@@ -15,7 +15,6 @@ export default function Hero(){
             <img className={styles['fall-red']} src="/Assets/fall-red.png" />
             <img className={styles['fall-blue']} src="/Assets/fall-blue.png" />
             <img className={styles['fall-yellow']} src="/Assets/fall-yellow.png" />
-            {/* Repeat fall-red/blue/yellow with classes late-1, late-2 */}
 
             <img className={styles['bg-red']} src="/assets/rs.png" />
             <img className={styles['bg-blue']} src="/assets/bs.png" />
@@ -88,7 +87,8 @@ export default function Hero(){
                         </a>
                     </div>
                 </footer>
-            </div>
+            </div> */}
+            <div style={{height:'100vh'}}></div>
         </>
     )
 }
